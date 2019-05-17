@@ -59,21 +59,21 @@ elseif strcmp(data_type, 'complex_sin_struct')
     I = randperm(n);
     I = I(1:outN);
     y(I) = 5 + .1*(rand(1,length(I))-.5);
-    x(I) = 0 + (4*outP)*(rand(1,length(I))-0.5);
+    x(I) = 0 + (5*outP)*(rand(1,length(I))-0.5);
 
     outP = 0.1;
     outN = floor(n*outP);
     I = randperm(n);
     I = I(1:outN);
     y(I) = 4 + .1*(rand(1,length(I))-.5);
-    x(I) = (4*outP) + (4*outP)*(rand(1,length(I))-0.5);
+    x(I) = (5*outP) + (5*outP)*(rand(1,length(I))-0.5);
 
     outP1 = 0.1;
     outN = floor(n*outP1);
     I = randperm(n);
     I = I(1:outN);
     y(I) = 4 + .1*(rand(1,length(I))-.5);
-    x(I) = -(4*outP) + (4*outP)*(rand(1,length(I))-0.5);
+    x(I) = -(5*outP) + (5*outP)*(rand(1,length(I))-0.5);
 
     sp = .000001;
     
