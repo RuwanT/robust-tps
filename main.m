@@ -1,5 +1,6 @@
 
 clear all
+rng(2);
 
 n = 1000; % Number of data points
 
