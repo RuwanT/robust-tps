@@ -54,7 +54,7 @@ for loop_count=1:max_iter
     
     disp(['Loop No: ', num2str(loop_count), ', inlier change: ',num2str(abs(hold_Kth-Kth))])
     
-    if loop_count < 3
+    if loop_count < 4
         hold_Kth = Kth;
     elseif abs(hold_Kth-Kth) < dN
         break;
